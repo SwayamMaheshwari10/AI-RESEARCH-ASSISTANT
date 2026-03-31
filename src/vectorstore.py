@@ -2,9 +2,14 @@ import chromadb
 import numpy as np
 from typing import List, Any, Dict
 import os
+from pathlib import Path
+import uuid
 
 class VectorStore:
-    def __init__(self, collection_name: str="pdf_documents", persist_directory: str="../data/vector_store"):
+    def __init__(self, collection_name: str="pdf_documents", persist_directory: str=None):
+        if persist_directory is None:
+            # Keep persistence anchored to project root regardless of cwd.
+            persist_directory = str(Path(__file__).resolve().parent.parent / "data" / "vector_store")
         os.makedirs(persist_directory, exist_ok=True)
         self.client = chromadb.PersistentClient(path=persist_directory)
         self.collection = self.client.get_or_create_collection(
@@ -12,6 +17,20 @@ class VectorStore:
             metadata = {"hnsw:space":"cosine"}
         )
         print(f"[INFO] Vector store ready at {persist_directory} with collection '{collection_name}'")
+
+    def clear_collection(self):
+        """Delete and recreate the collection to avoid stale retrieval results."""
+        collection_name = self.collection.name
+        try:
+            self.client.delete_collection(name=collection_name)
+        except Exception as e:
+            print(f"[WARNING] Could not delete collection '{collection_name}': {e}")
+
+        self.collection = self.client.get_or_create_collection(
+            name=collection_name,
+            metadata={"hnsw:space": "cosine"}
+        )
+        print(f"[INFO] Collection '{collection_name}' reset.")
 
     def build_from_documents(self, chunks: List[Any], embeddings: np.ndarray):
         """
@@ -31,7 +50,7 @@ class VectorStore:
         if isinstance(embeddings, np.ndarray):
             embeddings = embeddings.tolist()
 
-        ids = [f"chunk_{i}" for i in range(len(documents))]
+        ids = [f"chunk_{uuid.uuid4().hex}_{i}" for i in range(len(documents))]
 
 
         # Add to DB

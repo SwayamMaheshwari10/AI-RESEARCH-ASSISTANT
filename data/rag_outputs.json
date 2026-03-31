@@ -1,0 +1,314 @@
+[
+  {
+    "question": "What protocol proposed by Anthropic focuses on interactions between agents and non-agent resources to establish standardized interfaces for tool invocation?",
+    "expected_source": "2507.21206v1.pdf",
+    "expected_page": 31,
+    "model_answer": "MCP (Model Context Protocol), proposed by Anthropic, is a communication protocol focused on interactions between agents and non-agent resources to establish standardized interfaces for tool invocation.\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 30\n[2] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 12\n[3] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 18",
+    "retrieved_contexts": [
+      "protocols emerged in the past year. Among them, the general-purpose protocols, MCP and A2A,\nhave demonstrated significant technical advantages and community influence. These two protocols\nare designed from different dimensions to address the characteristics of the Agentic Web, forming\ncomplementary solutions. We will provide a brief introduction to these two communication protocols\nand explain which key challenges faced by the Agentic Web they can address and how to address\nthem, followed by detailed introductions to their workflows.\nMCP, short for Model Context Protocol, proposed by Anthropic (Anthropic, 2024), is a communi-\ncation protocol focused on interactions between agents and non-agent resources. It aims to establish\nstandardized interfaces for tool invocation and has gradually evolved into a de facto industry stan-\ndard. Under the framework of this protocol, applications encapsulate the tools, resources, and",
+      "Agentic Web\nThese advancements signal a significant change in the way the Web will be used in the future. It is\nno longer just a place for human-centric browsing but a dynamic, agent-driven environment where\nintelligent agents can perform complex tasks on behalf of users. In this context, agent protocols like\nthe MCP (Anthropic, 2024b) are playing a crucial role in enabling communication and collaboration\nbetween various services and agents. The establishment of these protocols is laying the foundation\nfor a more standardized, scalable agent-Web interaction layer, further advancing the Agentic Web.\n2.3.2 Agent Attention Economy\nThe advent of communication protocols such as the MCP has precipitated a trend of standardisation,\nregistration, and organization of external tools and services within the agent ecosystem, which is\nanalogous to the \u201cyellow pages\u201d directory. This facilitates agents\u2019 access to and invocation of these",
+      "gize, and adapt independently. Without these cognitive abilities, agents cannot handle real-world\nambiguity, recover from failure, or scale across services.\n3.3.2 Interaction Dimension\nThe Interaction Dimension addresses a fundamental shift in how autonomous agents engage with\nthe digital environment. This shift moves the web away from static, human-authored hyperlinks\ntowarddynamic, context-awareconnections. Intraditionalwebarchitectures, interactionisprimarily\ndocument-based and mediated by human users. In contrast, agents in the Agentic Web interact\nthrough semantic protocols and runtime service discovery, allowing them to initiate and manage\ninteractions without relying on predefined links or manual input.\nThe emergence of agent-native communication protocols has been a key catalyst for this transforma-\ntion (Chang, 2024; Cisco, 2025; AI and Data, 2025; Yang et al., 2025d), such as the MCP (Anthropic,"
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "30"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "12"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "18"
+      }
+    ],
+    "latency": 0.33669257164001465
+  },
+  {
+    "question": "What are the three conceptual dimensions of the Agentic Web framework proposed in the paper?",
+    "expected_source": "2507.21206v1.pdf",
+    "expected_page": 18,
+    "model_answer": "The three conceptual dimensions of the Agentic Web framework proposed in the paper are:\n\n1. Intelligence\n2. Interaction\n3. Economy\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 14\n[2] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 15\n[3] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 1",
+    "retrieved_contexts": [
+      "the following sections, we propose a structured framework to examine this shift across 3 dimensions:\nIntelligence, Interaction, and Economy. Each dimension offers insight into how the Agentic Web is\nreshapingcapabilities, behaviors, andbusinessmodelsinincreasinglyautonomousdigitalecosystems.\n3.1 Core Conditions\nBuilding the Agentic Web requires rethinking fundamental elements of digital infrastructure. Three\nconditions are essential:\n15",
+      "Agentic Web\nFigure 6: Conceptual Framework of the Agentic Web. This diagram illustrates a three-dimensional\narchitecture composed of the Intelligence, Interaction, and Economic Dimensions, reflecting the\nevolution of AI agents from reasoning entities to active economic participants.\nCore Conditions for the Agentic Web\n(1) Agents must function as autonomous intermediaries, initiating and completing complex\ntasks independently.\n(2) Web resources need to be accessible through standardized, machine-readable interfaces.\n(3) Value must be exchanged not only between humans and systems, but also directly\nbetween agents.\nThese structural foundations are interdependent. Agent autonomy depends on semantic interfaces,\nprotocol interoperability, and the ability to discover and orchestrate external capabilities dynami-\ncally. Together, they create the conditions for scalable, intelligent web operations.\n3.2 Transformations in Web Architecture",
+      "5.2.1 Roadmap of the Agentic Web System . . . . . . . . . . . . . . . . . . . . . . 26\n5.2.2 Interaction Process Example: Collaborative Mechanisms in Travel Itinerary\nPlanning by Agents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28\n5.2.3 Recent Advances and Applications of Agentic Web Systems . . . . . . . . . . 29\n5.3 Agentic Communication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29\n5.3.1 Design Motivation (Beyond HTTP/RPC) . . . . . . . . . . . . . . . . . . . . 30\n2"
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "14"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "15"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "1"
+      }
+    ],
+    "latency": 0.17900609970092773
+  },
+  {
+    "question": "How many AI agent tools were integrated across Microsoft platforms as announced at Build 2025?",
+    "expected_source": "2507.21206v1.pdf",
+    "expected_page": 12,
+    "model_answer": "Over 50 AI agent tools have been integrated across platforms such as GitHub, Azure, Microsoft 365, and Windows.\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 11\n[2] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 39\n[3] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 3",
+    "retrieved_contexts": [
+      "paradigm significantly enhances both the breadth and depth of task execution. As a result, the\nWeb is undergoing a transformation from a static \u201cinformation network\u201d to a dynamic \u201caction\nnetwork\u201d in which autonomous systems are capable of perceiving, reasoning, and acting within\ndigital environments.\nHowever, this shift to multi-agent systems brings with it the need for sophisticated infrastructure\nto support these complex, agent-driven tasks. The advancement of the Agentic Web is not purely\nconceptual, it is increasingly grounded in real-world infrastructure developments. A key example of\nthis transformation is Microsoft\u2019s recent move towards the Agentic Web, announced at Build 2025.\nOver 50 AI agent tools have been integrated across platforms such as GitHub, Azure, Microsoft 365,\nand Windows. These tools support every stage of agent deployment, from development and orches-\ntration to memory management and inference optimization. They offer a unified environment for",
+      "formation, Super Agent can plan, act, and use over 80 tools, including real-time voice calls, map\nnavigation, document editing, calendar scheduling, and video generation, across diverse domains\nwith minimal supervision. It dynamically orchestrates nine large language models and integrates\nmore than ten proprietary datasets, enabling multi-step task execution and adaptive reasoning.\nGenspark Super Agent thus illustrates the evolution from conversational AI to autonomous digital\nagency, enhancing personal productivity through end-to-end workflow automation (Genspark, 2025).\nThe current landscape reveals a clear evolutionary trajectory whereAgent-as-Interface applica-\ntions are progressively incorporating Agent-as-User capabilities. This evolution is driven\nby fundamental differences in their underlying technical architectures. Agent-as-Interface systems\nprimarily rely onAPI-based interactions, utilizing structured endpoints, webhooks, and service",
+      "For the last few years, a shift has been taking place: the emergence of AI agents powered by large\nlanguage models (LLMs) (Yang et al., 2023a; Kapoor et al., 2024). TheseAI agents are software\nentities capable of perceiving their environment, reasoning, and taking actions autonomously to\nachieve goals set by the user. With the integration of perception and execution components, LLMs\nare no longer limited to responding to prompts: they can act through agents that plan, remember,\nand interact across digital systems (Wang et al., 2023). Importantly, these agents are not constrained\nto single-turn interactions but can carry out complex, long-horizon tasks. Moreover, multiple agents\ncan be orchestrated to work collaboratively on sophisticated objectives (Qian et al., 2024; Yang\net al., 2025e; Gottweis et al., 2025; Sapkota et al., 2025).\nThe transformation toward agent-based systems is driven by two powerful forces. First, AI assistants"
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "11"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "39"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "3"
+      }
+    ],
+    "latency": 0.22287535667419434
+  },
+  {
+    "question": "What is meant by the 'Agent Attention Economy' in the Agentic Web era?",
+    "expected_source": "2507.21206v1.pdf",
+    "expected_page": 13,
+    "model_answer": "The 'Agent Attention Economy' in the Agentic Web era refers to a trend where third-party tools and services compete not for human clicks, but for agent invocation. This means that agents can dynamically compose and orchestrate services from a modular ecosystem, leading to the development of agent-driven commercial models. Future monetization metrics may depend on factors such as invocation frequency, capability relevance, and successful task completion.\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 12\n[2] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 14\n[3] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf \u2014 page 0",
+    "retrieved_contexts": [
+      "Agentic Web\nThese advancements signal a significant change in the way the Web will be used in the future. It is\nno longer just a place for human-centric browsing but a dynamic, agent-driven environment where\nintelligent agents can perform complex tasks on behalf of users. In this context, agent protocols like\nthe MCP (Anthropic, 2024b) are playing a crucial role in enabling communication and collaboration\nbetween various services and agents. The establishment of these protocols is laying the foundation\nfor a more standardized, scalable agent-Web interaction layer, further advancing the Agentic Web.\n2.3.2 Agent Attention Economy\nThe advent of communication protocols such as the MCP has precipitated a trend of standardisation,\nregistration, and organization of external tools and services within the agent ecosystem, which is\nanalogous to the \u201cyellow pages\u201d directory. This facilitates agents\u2019 access to and invocation of these",
+      "Agentic Web\nCommercially, this era means the rise of theAgent Attention Economy, where third-party tools and\nservices compete not for human clicks, but for agent invocation. New protocols like the MCP are\nenabling agents to dynamically compose and orchestrate services from a modular ecosystem, leading\nto the development of agent-driven commercial models. Future monetization metrics may depend on\nfactors such as invocation frequency, capability relevance, and successful task completion, marking\na departure from the previous era\u2019s focus on user interaction and direct advertising. This shift is\ngiving rise to new forms of agent-oriented advertising and bidding systems, designed not to persuade\nusers directly, but to influence agent decision-making pipelines.\nStructurally, the Web is being redefined from a human-readable medium into an agent-native sub-\nstrate. On the consumption side, agents can proactively summarize, recommend, or execute tasks",
+      "the Agentic Web. We trace its evolution from the PC and Mobile Web eras and\nidentify the core technological foundations that support this shift. Central to our\nframework is a conceptual model consisting of three key dimensions: intelligence,\ninteraction, and economics. These dimensions collectively enable the capabilities of\nAI agents, such as retrieval, recommendation, planning, and collaboration.\nWe analyze the architectural and infrastructural challenges involved in creating scal-\nable agentic systems, including communication protocols, orchestration strategies,\nand emerging paradigms such as the Agent Attention Economy. We conclude by\ndiscussing the potential applications, societal risks, and governance issues posed by\nagentic systems, and outline research directions for developing open, secure, and in-\ntelligent ecosystems shaped by both human intent and autonomous agent behavior.\nA continuously updated collection of relevant studies for agentic web is available at:"
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "12"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "14"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\2507.21206v1.pdf",
+        "page": "0"
+      }
+    ],
+    "latency": 0.30988502502441406
+  },
+  {
+    "question": "What framework does the proposed recommending policy build upon to handle large action spaces and reduce redundant computation?",
+    "expected_source": "Deep Reinforcement Learning for List-wise Recommendations.pdf",
+    "expected_page": 2,
+    "model_answer": "The proposed recommending policy builds upon the Actor-Critic framework to handle large action spaces and reduce redundant computation.\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf \u2014 page 1\n[2] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf \u2014 page 2\n[3] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf \u2014 page 4",
+    "retrieved_contexts": [
+      "corresponding to this action. This architecture does not need to\nstore each Q-value in memory and thus can deal with large action\nspace or even continuous action space. A challenging problem of\nleveraging the second architecture is temporal complexity, i.e., this\narchitecture computes Q-value for all potential actions, separately.\nTo tackle this problem, in this paper, our recommending policy\nbuilds upon the Actor-Critic framework[ 25], shown in Fig.1 (c).\nThe Actor inputs the current state and aims to output the parame-\nters of a state-specific scoring function. Then the RA scores all items\nand selects an item with the highest score. Next, the Critic uses\nan approximation architecture to learn a value function (Q-value),\nwhich is a judgment of whether the selected action matches the\ncurrent state. Note that Critic shares the same architecture with the\nDQN in Fig.1(b). Finally, according to the judgment from Critic, the",
+      "an online user-agent interaction environment simulator. Next, we\npropose an Actor-Critic based reinforcement learning framework\nunder this setting. Finally, we discuss how to train the framework\nvia users\u2019 behavior log and how to utilize the framework for list-\nwise recommendations.\n2.1 Problem Statement\nWe study the recommendation task in which a recommender agent\n(RA) interacts with environment E(or users) by sequentially choos-\ning recommendation items over a sequence of time steps, so as\nto maximize its cumulative reward. We model this problem as a\nMarkov Decision Process (MDP), which includes a sequence of\nstates, actions and rewards. More formally, MDP consists of a tuple\nof five elements (S, A, P, R,\u03b3)as follows:\n\u2022State spaceS: A state st = {s1\nt , \u00b7\u00b7\u00b7 , sN\nt }\u2208S is defined as the\nbrowsing history of a user, i.e., previous N items that a user\nbrowsed before timet. The items inst are sorted in chronological\norder.\n\u2022Action spaceA: An action at = {a1\nt , \u00b7\u00b7\u00b7 , aK",
+      "sary for the inner operationmax. This prevents Eq.(7) to be adopted\nin practical recommender systems with the enormous action space.\nHowever, the Actor architectures proposed in Section 2.3 outputs a\ndeterministic action for Critic, which avoids the aforementioned\ncomputational cost of |A|evaluations in Eq.(7) as follows:\nQ(st , at )= Est+1\n\u0002\nrt + \u03b3Q(st+1, at+1)|st , at\n\u0003\n. (8)\nwhere the Q-value function Q(st , at )is the expected return based\non state st and the action at ."
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "1"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "2"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "4"
+      }
+    ],
+    "latency": 0.30747222900390625
+  },
+  {
+    "question": "How is the state space defined in the Markov Decision Process for the list-wise recommender system?",
+    "expected_source": "Deep Reinforcement Learning for List-wise Recommendations.pdf",
+    "expected_page": 3,
+    "model_answer": "The state space S is defined as the browsing history of a user, i.e., previous N items that a user browsed before time t. The items in st are sorted in chronological order.\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf \u2014 page 2\n[2] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf \u2014 page 4",
+    "retrieved_contexts": [
+      "an online user-agent interaction environment simulator. Next, we\npropose an Actor-Critic based reinforcement learning framework\nunder this setting. Finally, we discuss how to train the framework\nvia users\u2019 behavior log and how to utilize the framework for list-\nwise recommendations.\n2.1 Problem Statement\nWe study the recommendation task in which a recommender agent\n(RA) interacts with environment E(or users) by sequentially choos-\ning recommendation items over a sequence of time steps, so as\nto maximize its cumulative reward. We model this problem as a\nMarkov Decision Process (MDP), which includes a sequence of\nstates, actions and rewards. More formally, MDP consists of a tuple\nof five elements (S, A, P, R,\u03b3)as follows:\n\u2022State spaceS: A state st = {s1\nt , \u00b7\u00b7\u00b7 , sN\nt }\u2208S is defined as the\nbrowsing history of a user, i.e., previous N items that a user\nbrowsed before timet. The items inst are sorted in chronological\norder.\n\u2022Action spaceA: An action at = {a1\nt , \u00b7\u00b7\u00b7 , aK",
+      "present list-wise item recommendation algorithm in Algorithm 2.\nThe Actor first generates a list of weight vectors (line 1). For\neach weight vector, the RA scores all items in the item space (line\n3), selects the item with highest score (line 4), and then adds this\nitem at the end of the recommendation list. Finally the RA removes\nthis item from the item space, which prevents recommending the\nsame item to the recommendation list.\nAlgorithm 2 List-Wise Item Recommendation Algorithm.\nInput: Current state st , Item space I, the length of\nrecommendation list K.\nOutput:Recommendation list at .\n1: Generate wt = {w1\nt , \u00b7\u00b7\u00b7 , wK\nt }according Eq.(5)\n2: for k = 1, K do\n3: Score items in Iaccording Eq.(6)\n4: Select the an item with highest score as ak\nt\n5: Add item ak\nt in the bottom of at\n6: Remove item ak\nt from I\n7: end for\n8: return at\n2.4 The Critic Framework\nThe Critic is designed to leverage an approximator to learn an\naction-value function Q(st , at ), which is a judgment of whether the",
+      "browsing history of a user, i.e., previous N items that a user\nbrowsed before timet. The items inst are sorted in chronological\norder.\n\u2022Action spaceA: An action at = {a1\nt , \u00b7\u00b7\u00b7 , aK\nt }\u2208A is to recom-\nmend a list of items to a user at time t based on current state st ,\nwhere K is the number of items the RA recommends to user each\ntime.\n\u2022Reward R: After the recommender agent takes an action at at\nthe state st , i.e., recommending a list of items to a user, the user\nbrowses these items and provides her feedback. She can skip\n(not click), click, or order these items, and the agent receives\nimmediate reward r(st , at )according to the user\u2019s feedback.\n\u2022Transition probabilityP: Transition probability p(st+1|st , at )\ndefines the probability of state transition fromst to st+1 when RA\ntakes actionat . We assume that the MDP satisfiesp(st+1|st , at , ...,\ns1, a1)= p(st+1|st , at ). If user skips all the recommended items,\nthen the next state st+1 = st ; while if the user clicks/orders part"
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "2"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "4"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "2"
+      }
+    ],
+    "latency": 0.3048865795135498
+  },
+  {
+    "question": "What algorithm is used to train the parameters of the LIRD reinforcement learning framework?",
+    "expected_source": "Deep Reinforcement Learning for List-wise Recommendations.pdf",
+    "expected_page": 5,
+    "model_answer": "The DDPG (Deep Deterministic Policy Gradient) algorithm is used to train the parameters of the proposed LIRD framework.\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf \u2014 page 5\n[2] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf \u2014 page 8",
+    "retrieved_contexts": [
+      "sequence of loss functions L(\u03b8\u00b5)as\nL(\u03b8\u00b5)= Est,at,rt,st+1\n\u0002\n(yt \u2212Q(st , at ; \u03b8\u00b5))2\u0003\n, (9)\nwhere yt = Est+1 [rt + \u03b3Q\u2032(st+1, at+1;\u03b8\u00b5\u2032\n)|st , at ]is the target for\nthe current iteration. The parameters from the previous iteration\n\u03b8\u00b5\u2032\nare fixed when optimizing the loss function L(\u03b8\u00b5). In practice,\nit is often computationally efficient to optimize the loss function\nby stochastic gradient descent, rather than computing the full ex-\npectations in the above gradient.\n2.5 The Training Procedure\nAn illustration of the proposed user-agent online interaction simu-\nlator and deep reinforcement recommending LIRD framework is\ndemonstrated in Figure 3. Next, we discuss the parameters training\nprocedures. In this work, we utilize DDPG algorithm[10] to train\nthe parameters of the proposed framework. The training algorithm\nfor the proposed framework DEV is presented in Algorithm 3.\nIn each iteration, there are two stages, i.e., 1) transition generat-",
+      "the parameters of the proposed framework. The training algorithm\nfor the proposed framework DEV is presented in Algorithm 3.\nIn each iteration, there are two stages, i.e., 1) transition generat-\ning stage (lines 8-20), and 2) parameter updating stage (lines 21-28).\nFor transition generating stage (line 8): given the current state st ,\nthe RA first recommends a list of items at = {a1\nt , \u00b7\u00b7\u00b7 , aK\nt }accord-\ning to Algorithm 2 (line 9); then the agent observes the reward rt\nfrom simulator (line 10) and updates the state to st+1 (lines 11-17)\nfollowing the same strategy in Algorithm 1; and finally the recom-\nmender agent stores transitions (st , at , rt , st+1)into the memory\nD(line 19), and set st = st+1(line 20). For parameter updating\nstage: the recommender agent samples mini-batch of transitions\n(s, a, r, s\u2032)from D(line 22), and then updates parameters of Actor\nand Critic (lines 23-28) following a standard DDPG procedure [10].",
+      "associated to existing elements of the profile. \nThe specific algorithm in charge of managing the punishments/rewards described in the \nprevious section is Q-learning [29]. In essence, this scheme allows learning the optimal policy to \naccomplish, based on the history of interactions of the system with the environment. The history \nis a sequence of state-action-rewards <s0,a0,r1, s1,a1,r2, ...>, meaning that when the system is in \na state si, it takes the action a i, obtaining a reward ri+1. For each of these actions, the algorithm \nupdates an estimation Q[s,a] of the reward obtained by taking the action a when the system is in \nstate s. Each time the system takes an action, given a state, and it receives a reward, such an \nestimation Q[s,a] is updated based on the following equation:        \n Q[s,a] \u2190 Q[s,a] + \u03b1(r+ \u03b3 maxa' Q[s',a'] \u2013 Q[s,a])    (1)                          \nwhere \u03b1 is a step rate; r is the observed reward; s' is the state where the system goes by taking"
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "5"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "5"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf",
+        "page": "8"
+      }
+    ],
+    "latency": 0.3090858459472656
+  },
+  {
+    "question": "What value is used for the soft target update parameter (tau) during training?",
+    "expected_source": "Deep Reinforcement Learning for List-wise Recommendations.pdf",
+    "expected_page": 5,
+    "model_answer": "1\n2\nL(\u03b8\u00b5) = (y \u2212 Q(s, a; \u03b8\u00b5))^2\n26: Update Actor by minimizing 1\n2\nL(\u03b8\u03c0) = (y \u2212 Q(s, a; \u03b8\u03c0))^2\n27: Update target networks by soft target updates: \u03b8\u00b5\u2032\n\u2190 \u03c4\u03b8\u00b5 + (1 \u2212 \u03c4)\u03b8\u00b5\u2032\n28: \u03b8\u03c0\u2032\n\u2190 \u03c4\u03b8\u03c0 + (1 \u2212 \u03c4)\u03b8\u03c0\u2032\n29: end for\n30: end for\nAlgorithm 3 Parameters Training for DEV with DDPG.\n\nThe context does not mention the value of \u03c4 for the soft target updates of the target networks in the testing stage.\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf \u2014 page 5",
+    "retrieved_contexts": [
+      "stage: the recommender agent samples mini-batch of transitions\n(s, a, r, s\u2032)from D(line 22), and then updates parameters of Actor\nand Critic (lines 23-28) following a standard DDPG procedure [10].\nIn the algorithm, we introduce widely used techniques to train\nour framework. For example, we utilize a technique known as ex-\nperience replay [11] (lines 3,22), and introduce separated evaluation\nand target networks [14](lines 2,23), which can help smooth the\nlearning and avoid the divergence of parameters. For the soft target\nupdates of target networks(lines 27,28), we used \u03c4 = 0.001. More-\nover, we leverage prioritized sampling strategy [16] to assist the\nframework learning from the most important historical transitions.\n2.6 The Testing Procedure\nAfter framework training stage, RA gets well-trained parameters,\nsay \u0398\u03c0 and \u0398\u00b5. Then we can do framework testing on simulator\nenvironment. The model testing also follows Algorithm 3, i.e., the",
+      "After framework training stage, RA gets well-trained parameters,\nsay \u0398\u03c0 and \u0398\u00b5. Then we can do framework testing on simulator\nenvironment. The model testing also follows Algorithm 3, i.e., the\nparameters continuously updates during the testing stage, while the\nmajor difference from training stage is before each recommendation\nsession, we reset the parameters back to\u0398\u03c0 and \u0398\u00b5, for the sake of\nAlgorithm 3 Parameters Training for DEV with DDPG.\n1: Initialize actor network f\u03b8\u03c0 and critic network Q(s, a |\u03b8\u00b5)with\nrandom weights\n2: Initialize target network f \u2032and Q\u2032with weights\n\u03b8\u03c0\u2032\n\u2190\u03b8\u03c0, \u03b8\u00b5\u2032\n\u2190\u03b8\u00b5\n3: Initialize the capacity of replay memory D\n4: for session = 1, M do\n5: Reset the item space I\n6: Initialize state s0 from previous sessions\n7: for t = 1, T do\n8: Stage 1: Transition Generating Stage\n9: Select an action at = {a1\nt, \u00b7\u00b7\u00b7 , aK\nt }according Alg.2\n10: Execute action at and observe the reward list {r1\nt , \u00b7\u00b7\u00b7 , r K\nt }for\neach item in at\n11: Set st+1 = st\n12: for k = 1, K do\n13: if rk",
+      "9: Select an action at = {a1\nt, \u00b7\u00b7\u00b7 , aK\nt }according Alg.2\n10: Execute action at and observe the reward list {r1\nt , \u00b7\u00b7\u00b7 , r K\nt }for\neach item in at\n11: Set st+1 = st\n12: for k = 1, K do\n13: if rk\nt > 0 then\n14: Add ak\nt to the end of st+1\n15: Remove the first item of st+1\n16: end if\n17: end for\n18: Compute overall reward rt according Eq. (4)\n19: Store transition (st, at, rt, st+1)in D\n20: Set st = st+1\n21: Stage 2: Parameter Updating Stage\n22: Sample minibatch of Ntransitions (s, a, r, s\u2032)from D\n23: Generate a\u2032by target Actor network according Alg.2\n24: Set y = r + \u03b3Q\u2032(s\u2032, a\u2032; \u03b8\u00b5\u2032\n)\n25: Update Critic by minimizing \u0000y\u2212Q(s, a; \u03b8\u00b5)\u00012 according to:\n\u2207\u03b8\u00b5L(\u03b8\u00b5)\u2248 1\nN\n\u0002\n(y\u2212Q(s, a; \u03b8\u00b5))\u2207\u03b8\u00b5Q(s, a; \u03b8\u00b5)\n\u0003\n26: Update the Actor using the sampled policy gradient:\n\u2207\u03b8\u03c0f\u03b8\u03c0 \u2248 1\nN\n\u00d5\ni\n\u2207aQ(s, a |\u03b8\u00b5)\u2207\u03b8\u03c0f\u03b8\u03c0(s)\n27: Update the Critic target networks:\n\u03b8\u00b5\u2032\n\u2190\u03c4\u03b8 \u00b5 + (1 \u2212\u03c4)\u03b8\u00b5\u2032\n28: Update the Actor target networks:\n\u03b8\u03c0\u2032\n\u2190\u03c4\u03b8\u03c0 + (1 \u2212\u03c4)\u03b8\u03c0\u2032\n29: end for\n30: end for"
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "5"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "5"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "5"
+      }
+    ],
+    "latency": 0.49483776092529297
+  },
+  {
+    "question": "What reinforcement learning algorithm is used to manage user profiles in the ExTraS system?",
+    "expected_source": "SI_COMPSAC_revised.pdf",
+    "expected_page": 7,
+    "model_answer": "A reinforcement learning algorithm, based on the idea of reward/punishment, is exploited as the machine learning system that manages the user profile.\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf \u2014 page 8\n[2] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf \u2014 page 6\n[3] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf \u2014 page 13",
+    "retrieved_contexts": [
+      "7 \n \nFigure 2 shows a fragment of a user\u2019s profile, as an example. Textual characteristics are \ngrouped by a tablet device. In such an example, the user has preferred (among all the \nadaptations): Verdana as font face, 18 as font size, 1.5 as line heigh t and left as text alignment. \nIn the same example, the user has discarded: Times new roman and Courier New as font face, \n9 and 12 as font size, 1 as line height and center and justify as text alignment, while he/she has \nused the tablet. \n3.2 Learning System \nA reinforcement learning algorithm, based on the idea of reward/punishment [40] is exploited as \nthe machine learning system that manages the user profile [ 11]. Based on it, the user profile is \nupdated, either by adding new preferences/barriers, or by upda ting reward/punishment values \nassociated to existing elements of the profile. \nThe specific algorithm in charge of managing the punishments/rewards described in the",
+      "exploits it. \nIn our system, the user profile is a collection of typographic characteristics gathered by the \nsystem, on the basis of adaptations the user has request ed so as to improve Web content \nlegibility and readability. As the user exploits the system, asking for adaptations, our system \ncomputes automatic adaptations and related reward/punishment values (according to our \nLearning System, described in the followin g subsection), tracking the user\u2019s behavior. \nPeriodically, the system updates the user\u2019s profile, adding new characteristics, updating \nreward/punishment values for the already existing ones or adding new characteristic values as \nrequested by the user. \nThe system provides adaptations as state changes: from the original one to the adapted one, \naccording to each user\u2019s request. Characteristics of the original state are the ones the user has \ndiscarded, while characteristics of the adapted state are the ones the user has chosen. Hence,",
+      "12 \n \n \nFigure 6. A screenshot of the ExTraS options page. \n5. ExTraS Evaluations  \nIn order to assess the viability of our proposal, we have developed a simulator which mimics the \nuser behavior and we have integrated it with a fram ework that implements the reinforcement \nlearning algorithm. Moreover, we have conducted tests with real users, equipping their laptops \nwith the ExTraS prototype. \nIn subsection 5.1 we describe the simulations we have performed and the related results and in  \nsubsection 5.2 we present the tests we have conducted with the real users. \n5.1 Simulations \nA first evaluation was conducted via simulation  [1]. The rationale was to understand how the \npresented approach behaves when different types of users (i.e. with dif ferent profiles) are \nconsidered. Since it is difficult to conduct a wide range of real tests with different users, we \nresorted to simulation. Users w ere simulated as agents having different needs, based on their"
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf",
+        "page": "8"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf",
+        "page": "6"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf",
+        "page": "13"
+      }
+    ],
+    "latency": 7.285670042037964
+  },
+  {
+    "question": "How is the ExTraS prototype implemented to adapt HTML documents for users?",
+    "expected_source": "SI_COMPSAC_revised.pdf",
+    "expected_page": 9,
+    "model_answer": "The ExTraS prototype is implemented as a Firefox extension. It has been implemented by means of Mozilla SDK. Users can activate a contextual menu to set the preferred adaptations on an HTML page, and the system performs such adaptations by suitably changing the HTML and/or the CSS code of the page, on the client-side.\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf \u2014 page 9\n[2] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf \u2014 page 10\n[3] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf \u2014 page 11",
+    "retrieved_contexts": [
+      "preferences and needs, even according to the device he/she is using [ 41]. In ExTraS, we \nprovide content adaptations with the aim of improving Web pages readability and legibility. In \nour system, the adaptation process is i n charge locally, on the client side. The system can \nlocally decide and employ the most appropriate adaptations, according to user\u2019s profile, which is \nfed on the basis of the user\u2019s behavior. \nAs we have already claimed, the aim of our system is to adapt se veral kinds of markup \ndocument (e.g. LaTeX, PDF, RTF, etc.). But currently ExTraS works on explicit and descriptive \nmarkup documents, in particular HTML pages. Our system performs adaptations by changing \ntags, attributes and related values: the system injects new tags or attributes and/or it substitutes \noriginal tags or attributes value with the customized ones, changing markups. \nWhen a user opens up a Web page, then the system parses the DOM and the related style",
+      "readability of Web textual content. \n4. ExTraS Prototype  \nWe have designed and develop ed a prototype of our ExTraS which adapts HTML documents. \nSuch a prototype has been implemented as a Firefox extension. Users can activate a contextual \nmenu to set the preferred adaptations on an HTML page. Then the system performs such \nadaptations by suitably changing the HTML and/or the CSS code of the page, on the client-side. \nIn the meanwhile, the system tracks users\u2019 behaviors with the aim of learning their preferences \nand then automatically applying or proposing suitable adaptations. \nThis prototype has been implemented as a Firefox add-on by means of Mozilla SDK [42].  \nCurrently, the prototype has been tested on laptops (equipped with different operating systems) \nand on Samsung Galaxy Tab 2 devices, equipped with Android 4.0.4 and Firefox 33.0.  \nScripts have been created so as to: \n\uf0b7 provide an ad -hoc contextual menu, letting users choose among a sub -set of available",
+      "contrast).  \nFigure 5 compares two screenshots of the same Web page ( Yahoo! news home page , \nhttp://news.yahoo.com/), which have been ta ken respectively before and after having applied \nsome adaptations by means of ExTraS. In particular, the adaptions were done with the aim of \nincreasing the font-size and the color contrast of the titles and the summaries of the news. \nFinally, Figure 6 shows a screenshot of the options available for the ExTraS extension, the user \ncan set. For instance, the user can choose to highlight borders of the textual elements in the \nHTML page, when he/she activates the c ontextual menu in order to choose a specific \nadaptation to the element. By means of these options, the user can decide if he/she wants \nExTraS always applies automatic adaptations to any Web page ( On), or if the user can choose \nautomatic adaptations only fo r a specific Web page ( Off), or if all these options are always \napplied to any Web page (Default)."
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf",
+        "page": "9"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf",
+        "page": "10"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf",
+        "page": "11"
+      }
+    ],
+    "latency": 7.37340235710144
+  },
+  {
+    "question": "What was the average age of the elderly users involved in the real-user evaluation of the ExTraS system?",
+    "expected_source": "SI_COMPSAC_revised.pdf",
+    "expected_page": 16,
+    "model_answer": "The average age of the elderly users involved in the real-user evaluation of the ExTraS system was 67.1 years.\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf \u2014 page 17\n[2] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf \u2014 page 22\n[3] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf \u2014 page 18",
+    "retrieved_contexts": [
+      "16 \n \n \nFigure 8 \u2013 Elderly user, who changes his/her preferences \n \nThe simulation campaign confirmed that the system learns the user\u2019s preferences, \nindependently from the simulated user. But needless to say, having experimental results \nobtained from a real evaluation might provide useful indications on the performance and  the \ngoodness of the system. Results from this evaluation are reported in the next subsection. \n5.2 Tests with users \nWe have conducted a test with users campaign involving 10 elderly users [ 45]. In this \nsubsection we describe the users sample, how we conducted the tests and the related results.  \nThe age of the involved users range s from 65 to 69, with an average value of 67.1; 50% are \nfemale and 50% are male, all of them are Italian language mother tongue. Their use of the Web \nis vary various, some of them use to navigate 3 hours per day, while some other just few hours",
+      "21 \n \nThanks to log files, we have evaluated the performances of ExTraS, during the evaluation \nperiods, in terms of manual adaptations (explicitly chosen by the users thanks to the contextual \nmenu), wrong automatic adap tations and correct automatic adaptations. Figure 9 shows such \nvalues as average daily adaptations grouped by weeks for User 5, the user who mostly \nexploited ExTraS and with the highest average time spent on the Internet . It is worth noting that \nduring the first weeks the system requests many manual adaptation s and commits more errors \nin terms of wrong automatic adaptations, while, after such an initial period, these values tend to \nzero. On the contrary, the number of correct automatic adaptations increases during the \nevaluations period. Obviously, the more the user exploits ExTraS and the more ExTraS l earns \nand improves correct automatic adaptation. \n \nFigure 9 \u2013 User 1 test period \n6. Conclusions",
+      "17 \n \nThe ExTraS users evaluation has been conducted in two phases: during the first phase we \nasked our users to complete some tasks by using ExTraS installed on their laptops, while during \nthe second phase we let the users exploit ExTraS for an 8 weeks period. The users have filled a \nquestionnaire related to such two phases, reporting about their whole experience with ExTraS. \nThe tasks we have asked our users to complete are the following ones: \n1- Increasing the font-size of news in one of the most frequently navigated news Web site.  \n2- Changing the background and the foreground color of the results of a search on Google. \n3- Changing the font-family of a Wikipedia term definition.  \n4- Changing some ExTraS options on the Firefox add-ons page. \nAll the users completed all the tasks, and answered our questionnaire, by declaring their \nappreciation of the feature exploited to complete each task (assigning a score ranging from 1 to"
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf",
+        "page": "17"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf",
+        "page": "22"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\SI_COMPSAC_revised.pdf",
+        "page": "18"
+      }
+    ],
+    "latency": 7.2727179527282715
+  },
+  {
+    "question": "Both the list-wise recommendation system and the ExTraS system use reinforcement learning. Which paper specifically employs the Deep Deterministic Policy Gradient (DDPG) algorithm?",
+    "expected_source": "Deep Reinforcement Learning for List-wise Recommendations.pdf",
+    "expected_page": 5,
+    "model_answer": "The answer is not present in the given context.\n\nSources:\n[1] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf \u2014 page 0\n[2] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf \u2014 page 8\n[3] C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf \u2014 page 7",
+    "retrieved_contexts": [
+      "Efforts have been made on utilizing reinforcement learning for\nrecommender systems, such as POMDP[ 23] and Q-learning[26].\nHowever, these methods may become inflexible with the increasing\nnumber of items for recommendations. This prevents them to be\nadopted by practical recommender systems. Thus, we leverage Deep\nReinforcement Learning[10] with (adapted) artificial neural net-\nworks as the non-linear approximators to estimate the action-value\nfunction in RL. This model-free reinforcement learning method\ndoes not estimate the transition probability and not store the Q-\nvalue table. This makes it flexible to support huge amount of items\nin recommender systems.\n1.1 List-wise Recommendations\nUsers in practical recommender systems are typically recommended\na list of items at one time. List-wise recommendations are more\ndesired in practice since they allow the systems to provide diverse\nand complementary options to their users. For list-wise recommen-",
+      "Deep Reinforcement Learning for List-wise Recommendations DRL4KDD \u201919, August 5, 2019, Anchorage, AK, USA\nmake recommendations from web usage data as the actions rather\nthan discovering explicit patterns from the data. The system in-\nherits the intrinsic characteristic of reinforcement learning which\nis in a constant learning process. Sunehag et al.[ 24] introduced\nagents that successfully address sequential decision problems with\nhigh-dimensional combinatorial slate-action spaces.\n5 CONCLUSION\nIn this paper, we propose a novel framework LIRD, which models\nthe recommendation session as a Markov Decision Process and\nleverages Deep Reinforcement Learning to automatically learn the\noptimal recommendation strategies. Reinforcement learning based\nrecommender systems have two advantages: (1) they can contin-\nuously update strategies during the interactions, and (2) they are\nable to learn a strategy that maximizes the long-term cumulative",
+      "between computation costs and prediction accuracy.\nThe second category is about reinforcement learning for recom-\nmendations, which is different with the traditional item recommen-\ndations. In this paper, we consider the recommending procedure as\nsequential interactions between users and recommender agent; and\nleverage reinforcement learning to automatically learn the optimal\nrecommendation strategies. Indeed, reinforcement learning have\nbeen widely examined in recommendation field. The MDP-Based\nCF model in Shani et al.[ 23] can be viewed as approximating a\npartial observable MDP (POMDP) by using a finite rather than\nunbounded window of past history to define the current state. To\nreduce the high computational and representational complexity\nof POMDP, three strategies have been developed: value function\napproximation[6], policy based optimization [17, 19], and stochastic\nsampling [8]. Furthermore, Mahmood et al.[13] adopted the rein-"
+    ],
+    "retrieved_sources": [
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "0"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "8"
+      },
+      {
+        "source": "C:\\Users\\carat\\OneDrive\\Desktop\\coding\\projects\\rag-project\\data\\Deep Reinforcement Learning for List-wise Recommendations.pdf",
+        "page": "7"
+      }
+    ],
+    "latency": 7.241236925125122
+  }
+]

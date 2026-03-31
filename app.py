@@ -1,6 +1,8 @@
 ﻿import streamlit as st
 import os
 import tempfile
+import io
+import pandas as pd
 
 from src.data_loader import load_all_pdfs
 from src.embedding import EmbeddingPipeline
@@ -8,9 +10,7 @@ from src.vectorstore import VectorStore
 from src.search import RAGSearch
 
 
-# ----------------------------
 # Page config
-# ----------------------------
 st.set_page_config(
     page_title="Research Assistant (RAG)",
     layout="wide"
@@ -21,14 +21,21 @@ st.write(
     "Upload research papers (PDFs) and ask questions grounded in their content."
 )
 
-# ----------------------------
 # Session state
-# ----------------------------
 if "indexed" not in st.session_state:
     st.session_state.indexed = False
 
 if "rag" not in st.session_state:
     st.session_state.rag = None
+
+if "literature_review_df" not in st.session_state:
+    st.session_state.literature_review_df = None
+
+# Refresh stale session objects after code changes (common during Streamlit reruns).
+if st.session_state.rag is not None:
+    has_qa = hasattr(st.session_state.rag, "search_and_summarize")
+    if not has_qa:
+        st.session_state.rag = RAGSearch()
 
 
 # ----------------------------
@@ -64,6 +71,7 @@ if st.sidebar.button("🔍 Submit & Process Documents"):
 
             # Store in Chroma
             store = VectorStore()
+            store.clear_collection()
             store.build_from_documents(chunks, embeddings)
 
             # Initialize RAG
@@ -73,9 +81,7 @@ if st.sidebar.button("🔍 Submit & Process Documents"):
         st.sidebar.success("✅ Documents processed successfully!")
 
 
-# ----------------------------
 # Main – Question Answering
-# ----------------------------
 st.header("❓ Ask a Question")
 
 if not st.session_state.indexed:

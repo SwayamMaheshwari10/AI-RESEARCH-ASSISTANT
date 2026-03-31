@@ -24,10 +24,10 @@ wheels/
 data/vector_store/
 
 # ============================
-# Temporary files
+# Editor / IDE files
 # ============================
-tmp/
-temp/
+.cursor/
+.vscode/
 
 # ============================
 # OS-specific files

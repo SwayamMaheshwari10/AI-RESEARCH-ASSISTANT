@@ -1,45 +1,82 @@
 # 📄 AI Research Assistant (RAG)
 
-An end-to-end **Retrieval-Augmented Generation (RAG)** application that allows users to upload research papers (PDFs), ask questions grounded in their content, and receive fact-based answers with source citations.
+An end-to-end **Retrieval-Augmented Generation (RAG)** application that lets you upload research papers (PDFs), ask questions grounded in their content, and receive fact-based answers with source citations.
 
 ---
 
 ## 🚀 Features
 
 | Feature | Description |
-|---------|-------------|
-| **📤 Multi-PDF Upload** | Upload one or more research papers in PDF format. |
-| **🔍 Semantic Retrieval (RAG)** | Relevant document chunks are retrieved using vector embeddings (SentenceTransformers + ChromaDB). |
-| **🤖 LLM-Powered Answers** | Answers are generated using Gemini (via LangChain), constrained strictly to retrieved content. |
-| **📚 Metadata-Based Citations** | Every answer includes deterministic citations (PDF name + page number) derived directly from retrieval metadata — no hallucinated references. |
-| **🧱 Modular Architecture** | Clean separation between ingestion, embedding, vector storage, retrieval, and UI. |
-| **🖥️ Interactive Streamlit UI** | Simple and intuitive interface for document upload and question answering. |
+|--------|-------------|
+| **📤 Multi-PDF Upload** | Upload one or more research papers in PDF format |
+| **🔍 Semantic Retrieval (RAG)** | Relevant document chunks retrieved using vector embeddings (SentenceTransformers + ChromaDB) |
+| **🤖 LLM-Powered Answers** | Answers generated using Groq-hosted LLMs (via LangChain), strictly constrained to retrieved content |
+| **📚 Metadata-Based Citations** | Every answer includes deterministic citations (PDF name + page number) — no hallucinated references |
+| **📊 RAG Evaluation (RAGAS)** | Quantitative evaluation using context precision, recall, faithfulness, and answer relevance |
+| **⚡ Optimized Latency** | ~2.63 seconds average end-to-end query response time |
+| **🧱 Modular Architecture** | Clean separation between ingestion, embedding, vector storage, retrieval, evaluation, and UI |
+| **🖥️ Interactive Streamlit UI** | Simple, intuitive interface for document upload and question answering |
 
 ---
 
 ## 🧠 System Architecture
 
-### Source Code Structure
+### 🔄 RAG Pipeline
+```mermaid
+flowchart LR
+    subgraph Ingestion ["📥 Document Ingestion"]
+        A(["📄 Upload PDF"]) --> B["Text Extraction
+        data_loader.py"]
+        B --> C["Chunking
+        embedding.py"]
+        C --> D["Embedding Model
+        all-MiniLM-L6-v2"]
+        D --> E[("ChromaDB
+        Vector Store")]
+    end
 
+    subgraph Query ["🔍 Query Pipeline"]
+        Q(["💬 User Query"]) --> QE["Query Embedding"]
+        QE --> R["Vector Similarity Search"]
+        R --> E
+        E --> Ctx["Top-K
+        Relevant Chunks"]
+    end
+
+    subgraph Generation ["🤖 Answer Generation"]
+        Ctx --> LLM["Groq LLM (LLaMA 3.1)"]
+        LLM --> Ans["Generated Answer"]
+        Ans --> Cite["📎 Attach Citations
+        Source + Page No."]
+        Cite --> Out(["✅ Final Answer"])
+    end
+
+    subgraph Evaluation ["📊 Evaluation - RAGAS"]
+        Out --> Eval["evaluate_metrics.py"]
+        Eval --> M1["Context Precision"]
+        Eval --> M2["Context Recall"]
+        Eval --> M3["Faithfulness"]
+        Eval --> M4["Answer Relevance"]
+    end
+
+    style Ingestion fill:#1e3a5f,color:#fff,stroke:#4a90d9
+    style Query fill:#1a3a2a,color:#fff,stroke:#4caf50
+    style Generation fill:#3a1a1a,color:#fff,stroke:#e57373
+    style Evaluation fill:#2a1a3a,color:#fff,stroke:#ab47bc
+```
+---
+
+### 📁 Project Structure
 ```
 src/
-├── data_loader.py   → Load & parse PDFs
-├── embedding.py     → Chunk + embed text
-├── vectorstore.py   → Store embeddings in ChromaDB
-├── search.py        → Retrieval + LLM generation (RAG)
-└── app.py           → Streamlit UI (or at project root)
+├── data_loader.py       → Load & parse PDFs
+├── embedding.py         → Chunk + embed text
+├── vectorstore.py       → Store embeddings in ChromaDB
+├── search.py            → Retrieval + LLM generation (RAG)
+├── evaluate_rag.py      → Generate model outputs
+├── evaluate_metrics.py  → RAGAS evaluation
+└── app.py               → Streamlit UI
 ```
-
-### Processing Flow
-
-1. PDFs are uploaded and parsed
-2. Text is chunked and embedded using `all-MiniLM-L6-v2`
-3. Embeddings are stored in ChromaDB
-4. User query is embedded and matched against stored vectors
-5. Retrieved chunks are passed to the LLM
-6. Answer is generated only from retrieved context
-7. Source citations are appended from metadata
-
 ---
 
 ## 🛠️ Tech Stack
@@ -48,10 +85,11 @@ src/
 |-----------|------------|
 | **Language** | Python |
 | **UI** | Streamlit |
-| **Embeddings** | SentenceTransformers |
+| **Embeddings** | SentenceTransformers (`all-MiniLM-L6-v2`) |
 | **Vector DB** | ChromaDB |
 | **LLM Interface** | LangChain |
-| **LLM** | Google Gemini API |
+| **LLM** | Groq (LLaMA 3.1) |
+| **Evaluation** | RAGAS |
 | **Package Manager** | uv |
 
 ---
@@ -59,67 +97,79 @@ src/
 ## 📦 Installation & Setup
 
 ### 1️⃣ Clone the repository
-
 ```bash
 git clone https://github.com/your-username/rag-project.git
 cd rag-project
 ```
 
-### 2️⃣ Create & activate environment (recommended)
-
+### 2️⃣ Create & activate a virtual environment
 ```bash
 uv venv
 ```
 
 ### 3️⃣ Install dependencies
-
 ```bash
-uv pip install -r requirements.txt
-```
-
-Or with `uv`:
-
-```bash
+# Using uv (recommended)
 uv sync
+
+# Or with pip
+uv pip install -r requirements.txt
 ```
 
 ### 4️⃣ Set up environment variables
 
 Create a `.env` file in the project root:
-
 ```env
-GOOGLE_API_KEY=your_gemini_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
 ```
 
-> ⚠️ **Never commit `.env` files to GitHub.**
+> ⚠️ **Never commit `.env` files to version control.**
 
 ---
 
-## ▶️ Run the Application
+## ▶️ Running the Application
 
+### Start the Streamlit app
 ```bash
+# With uv
 uv run streamlit run app.py
-```
 
-Or without uv:
-
-```bash
+# Without uv
 streamlit run app.py
 ```
 
-### Usage
+### Run the Evaluation Pipeline
 
-1. Upload one or more PDFs
-2. Click **Index Documents**
-3. Ask questions about the papers
-4. View answers with citations
+1. **Generate model outputs:**
+```bash
+   python -m src.evaluate_rag
+```
+
+2. **Compute RAGAS metrics:**
+```bash
+   python -m src.evaluate_metrics
+```
+
+3. Analyze:
+-  Retrieval quality (precision & recall)
+-  Generation quality (faithfulness & relevance)
+-  System latency
+
+---
+
+## 💡 Usage
+
+1. Upload one or more PDF research papers
+2. Click **Index Documents** to process and embed them
+3. Ask any question about the uploaded papers
+4. View the generated answer along with **source citations** (PDF name + page number)
 
 ---
 
 ## 🌱 Future Enhancements
 
-- Conversational memory (multi-turn Q&A)
-- Literature review matrix generation
-- CSV / Excel export of extracted insights
-- Source preview and page highlighting
-- Deployment on Streamlit Cloud
+-  Hybrid retrieval (BM25 + dense embeddings)
+-  Literature review matrix generation
+-  CSV / Excel export of extracted insights
+-  Streamlit Cloud deployment
+-  UI enhancements  

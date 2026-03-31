@@ -3,7 +3,7 @@ from typing import List, Any
 from langchain_community.document_loaders import PyPDFLoader
 
 def load_all_pdfs(data_dir: str)->List[Any]:
-    "Load all pdfs from data directory and convert to Langchain Document structure"
+    """Load all pdfs from data directory and convert to Langchain Document structure"""
     data_path = Path(data_dir).resolve()
     print(f"[DEBUG] Data Path: {data_path}")
     documents = []

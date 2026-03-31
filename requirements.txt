@@ -6,6 +6,10 @@ pymupdf
 sentence-transformers
 chromadb
 langchain_google_genai
+langchain-groq
 python-dotenv
 streamlit  
 google-auth
+ragas
+datasets
+openpyxl

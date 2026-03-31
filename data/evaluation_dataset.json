@@ -1,0 +1,113 @@
+[
+{
+"question_id": "Q1",
+"question": "What protocol proposed by Anthropic focuses on interactions between agents and non-agent resources to establish standardized interfaces for tool invocation?",
+"paper_title": "Agentic Web: Weaving the Next Web with AI Agents",
+"source_pdf_name": "2507.21206v1.pdf",
+"expected_page_number": 31,
+"ground_truth_answer": "The Model Context Protocol (MCP) establishes standardized interfaces for tool invocation between agents and non-agent resources.",
+"answer_type": "factual"
+},
+{
+"question_id": "Q2",
+"question": "What are the three conceptual dimensions of the Agentic Web framework proposed in the paper?",
+"paper_title": "Agentic Web: Weaving the Next Web with AI Agents",
+"source_pdf_name": "2507.21206v1.pdf",
+"expected_page_number": 18,
+"ground_truth_answer": "The Agentic Web framework is built on three dimensions: Intelligence, Interaction, and Economy.",
+"answer_type": "factual"
+},
+{
+"question_id": "Q3",
+"question": "How many AI agent tools were integrated across Microsoft platforms as announced at Build 2025?",
+"paper_title": "Agentic Web: Weaving the Next Web with AI Agents",
+"source_pdf_name": "2507.21206v1.pdf",
+"expected_page_number": 12,
+"ground_truth_answer": "Over 50 AI agent tools were integrated across Microsoft platforms.",
+"answer_type": "numerical"
+},
+{
+"question_id": "Q4",
+"question": "What is meant by the 'Agent Attention Economy' in the Agentic Web era?",
+"paper_title": "Agentic Web: Weaving the Next Web with AI Agents",
+"source_pdf_name": "2507.21206v1.pdf",
+"expected_page_number": 13,
+"ground_truth_answer": "The Agent Attention Economy is a paradigm where tools and services compete for invocation by AI agents rather than human clicks.",
+"answer_type": "conceptual"
+},
+
+{
+"question_id": "Q5",
+"question": "What framework does the proposed recommending policy build upon to handle large action spaces and reduce redundant computation?",
+"paper_title": "Deep Reinforcement Learning for List-wise Recommendations",
+"source_pdf_name": "Deep Reinforcement Learning for List-wise Recommendations.pdf",
+"expected_page_number": 2,
+"ground_truth_answer": "The recommending policy is based on the Actor-Critic framework.",
+"answer_type": "factual"
+},
+{
+"question_id": "Q6",
+"question": "How is the state space defined in the Markov Decision Process for the list-wise recommender system?",
+"paper_title": "Deep Reinforcement Learning for List-wise Recommendations",
+"source_pdf_name": "Deep Reinforcement Learning for List-wise Recommendations.pdf",
+"expected_page_number": 3,
+"ground_truth_answer": "The state space consists of the user's browsing history represented by the previous N items browsed before time t.",
+"answer_type": "factual"
+},
+{
+"question_id": "Q7",
+"question": "What algorithm is used to train the parameters of the LIRD reinforcement learning framework?",
+"paper_title": "Deep Reinforcement Learning for List-wise Recommendations",
+"source_pdf_name": "Deep Reinforcement Learning for List-wise Recommendations.pdf",
+"expected_page_number": 5,
+"ground_truth_answer": "The Deep Deterministic Policy Gradient (DDPG) algorithm is used.",
+"answer_type": "factual"
+},
+{
+"question_id": "Q8",
+"question": "What value is used for the soft target update parameter (tau) during training?",
+"paper_title": "Deep Reinforcement Learning for List-wise Recommendations",
+"source_pdf_name": "Deep Reinforcement Learning for List-wise Recommendations.pdf",
+"expected_page_number": 5,
+"ground_truth_answer": "The value used for tau is 0.001.",
+"answer_type": "numerical"
+},
+
+{
+"question_id": "Q9",
+"question": "What reinforcement learning algorithm is used to manage user profiles in the ExTraS system?",
+"paper_title": "Automatic web content personalization through reinforcement learning",
+"source_pdf_name": "SI_COMPSAC_revised.pdf",
+"expected_page_number": 7,
+"ground_truth_answer": "The system uses the Q-learning algorithm.",
+"answer_type": "factual"
+},
+{
+"question_id": "Q10",
+"question": "How is the ExTraS prototype implemented to adapt HTML documents for users?",
+"paper_title": "Automatic web content personalization through reinforcement learning",
+"source_pdf_name": "SI_COMPSAC_revised.pdf",
+"expected_page_number": 9,
+"ground_truth_answer": "It is implemented as a Firefox extension that modifies HTML and CSS on the client side.",
+"answer_type": "factual"
+},
+{
+"question_id": "Q11",
+"question": "What was the average age of the elderly users involved in the real-user evaluation of the ExTraS system?",
+"paper_title": "Automatic web content personalization through reinforcement learning",
+"source_pdf_name": "SI_COMPSAC_revised.pdf",
+"expected_page_number": 16,
+"ground_truth_answer": "The average age of the elderly users was 67.1 years.",
+"answer_type": "numerical"
+},
+
+{
+"question_id": "Q12",
+"question": "Both the list-wise recommendation system and the ExTraS system use reinforcement learning. Which paper specifically employs the Deep Deterministic Policy Gradient (DDPG) algorithm?",
+"paper_title": "Deep Reinforcement Learning for List-wise Recommendations",
+"source_pdf_name": "Deep Reinforcement Learning for List-wise Recommendations.pdf",
+"expected_page_number": 5,
+"ground_truth_answer": "The paper 'Deep Reinforcement Learning for List-wise Recommendations' employs the Deep Deterministic Policy Gradient (DDPG) algorithm.",
+"answer_type": "cross-paper"
+}
+]
